@@ -31,10 +31,10 @@
             <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
                 <div class="position-relative rounded overflow-hidden">
                     <img class="img-fluid w-100"
-                        src="{{ asset('seo-agency-website-template/img/IMG_0860.jpg') }}" alt="">
+                        src="{{ asset('seo-agency-website-template/img/IMG_0860.JPG') }}" alt="">
                     <div class="portfolio-overlay">
                         <a class="btn btn-light"
-                            href="{{ asset('seo-agency-website-template/img/IMG_0860.jpg') }}"
+                            href="{{ asset('seo-agency-website-template/img/IMG_0860.JPG') }}"
                             data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                         <div class="mt-auto">
                             <small class="text-white"><i class="fa fa-folder me-2"></i>Launch Day</small>
@@ -73,10 +73,10 @@
             <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
                 <div class="position-relative rounded overflow-hidden">
                     <img class="img-fluid w-100"
-                        src="{{ asset('seo-agency-website-template/img/IMG_0800.jpg') }}" alt="">
+                        src="{{ asset('seo-agency-website-template/img/IMG_0800.JPG') }}" alt="">
                     <div class="portfolio-overlay">
                         <a class="btn btn-light"
-                            href="{{ asset('seo-agency-website-template/img/IMG_0800.jpg') }}"
+                            href="{{ asset('seo-agency-website-template/img/IMG_0800.JPG') }}"
                             data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                         <div class="mt-auto">
                             <small class="text-white"><i class="fa fa-folder me-2"></i>Ladies in Tech</small>
