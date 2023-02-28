@@ -26,7 +26,7 @@
 <!-- Full Screen Search End -->
 
 
-<!-- Contact Start -->
+<!-- Registeration Start -->
 <div class="container-xxl py-5">
     <div class="container px-lg-5">
         <div class="row justify-content-center">
@@ -86,6 +86,6 @@
         </div>
     </div>
 </div>
-<!-- Contact End -->
+<!-- Registration End -->
 
 </div>

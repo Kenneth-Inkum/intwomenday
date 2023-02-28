@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center mt-4">
-                    <a class="btn btn-primary rounded-pill px-4 me-3" href="{{ route('about-us') }}">Read More</a>
+                    <a class="btn btn-primary rounded-pill px-4 me-3 blue-footer" href="{{ route('about-us') }}">Read More</a>
                     <a class="btn btn-outline-primary btn-square me-3" href="https://facebook.com/bluespacehubs"><i
                             class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-primary btn-square me-3" href="https://twitter.com/bluespacehubs"><i

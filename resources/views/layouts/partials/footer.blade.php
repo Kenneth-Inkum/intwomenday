@@ -1,7 +1,7 @@
-<div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn blue-footer" data-wow-delay="0.1s">
     <div class="container py-5 px-lg-5">
         <div class="row g-5">
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
                 <h5 class="text-white mb-4">Locate Our Office At</h5>
                 <p><i class="fa fa-map-marker-alt me-3"></i>06 Quarcoo Ln, Accra</p>
                 <p><i class="fa fa-phone-alt me-3"></i>+233 549469718</p>
@@ -14,7 +14,7 @@
                     {{-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a> --}}
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
                 <h5 class="text-white mb-4">Links</h5>
                 <a class="btn btn-link" href="{{ route('dashboard') }}">Home</a>
                 <a class="btn btn-link" href="{{ route('register') }}">Register</a>
@@ -22,13 +22,13 @@
                 {{-- <a class="btn btn-link" href="">Terms & Condition</a> --}}
                 {{-- <a class="btn btn-link" href="">Career</a> --}}
             </div>
-            {{-- <div class="col-md-6 col-lg-3">
-                <h5 class="text-white mb-4">Project Gallery</h5>
+            <div class="col-md-6 col-lg-4">
+                {{-- <h5 class="text-white mb-4">Project Gallery</h5> --}}
                 <div class="row g-2">
-                    <div class="col-4">
-                        <img class="img-fluid" src="{{ asset('seo-agency-website-template/img/portfolio-1.jpg') }}" alt="Image">
+                    <div class="col-12">
+                        <img class="img-fluid" src="{{ asset('seo-agency-website-template/img/DigitAll-Event-01a.png') }}" alt="Image">
                     </div>
-                    <div class="col-4">
+                    {{-- <div class="col-4">
                         <img class="img-fluid" src="{{ asset('seo-agency-website-template/img/portfolio-2.jpg') }}" alt="Image">
                     </div>
                     <div class="col-4">
@@ -42,10 +42,10 @@
                     </div>
                     <div class="col-4">
                         <img class="img-fluid" src="{{ asset('seo-agency-website-template/img/portfolio-6.jpg') }}" alt="Image">
-                    </div>
+                    </div> --}}
                 </div>
-            </div> --}}
-            <div class="col-md-6 col-lg-3">
+            </div>
+            {{-- <div class="col-md-6 col-lg-3">
                 <h5 class="text-white mb-4">Subscribe to Our Newsletter</h5>
                 <p>By subscribing to our newsletter, you will be the first to know about any new developments or
                     exciting announcements.<br>We promise not to spam you or share your information with any third
@@ -58,7 +58,7 @@
                                 class="fa fa-paper-plane text-primary fs-4"></i></button>
                     </div>
                 </form>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="container px-lg-5">

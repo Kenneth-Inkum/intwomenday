@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #EF559A;
-    --secondary: #EF559A;
+    --primary: #533379;
+    --secondary: #533379;
     --light: #F7FAFF;
-    --dark: #EF559A;
+    --dark: #533379;
 }
 
 
@@ -523,3 +523,29 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+/* .orange-logo {
+    color: #e0a212 !important;
+}
+
+.orange-logo {
+    color: #e0a212 !important;
+} */
+
+
+/* .green-logo {
+    color: #20b3a9 !important;
+} */
+
+.blue-footer {
+    background-color: #284ac7 !important;
+}
+
+/* .white-footer {
+    background-color: #e3dddd !important;
+} */
+
+
+/* .green-hero {
+    background-color: #20b3a9 !important;
+} */
