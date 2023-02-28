@@ -21,7 +21,7 @@
                         <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Breaking the Glass Ceiling in Tech Careers</h6>
                     </div>
                 </div>
-                <div class="d-flex align-items-center mt-4">
+                {{-- <div class="d-flex align-items-center mt-4">
                     <a class="btn btn-primary rounded-pill px-4 me-3 blue-footer" href="{{ route('about-us') }}">Read More</a>
                     <a class="btn btn-outline-primary btn-square me-3" href="https://facebook.com/bluespacehubs"><i
                             class="fab fa-facebook-f"></i></a>
@@ -29,13 +29,13 @@
                             class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-primary btn-square me-3" href="https://instagram.com/bluespacehubs"><i
                             class="fab fa-instagram"></i></a>
-                    {{-- <a class="btn btn-outline-primary btn-square" href=""><i
-                            class="fab fa-linkedin-in"></i></a> --}}
-                </div>
+                    <a class="btn btn-outline-primary btn-square" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div> --}}
             </div>
             <div class="col-lg-6">
                 <img class="img-fluid wow zoomIn" data-wow-delay="0.5s"
-                    src="{{ asset('seo-agency-website-template/img/about.jpg') }}">
+                    src="{{ asset('seo-agency-website-template/img/undraw_4.png') }}">
             </div>
         </div>
     </div>

@@ -8,22 +8,22 @@
             <div class="col-12 text-center">
                 <ul class="list-inline mb-5" id="portfolio-flters">
                     <li class="btn px-3 pe-4 active" data-filter="*">All</li>
-                    <li class="btn px-3 pe-4" data-filter=".first">Design</li>
-                    <li class="btn px-3 pe-4" data-filter=".second">Development</li>
+                    <li class="btn px-3 pe-4" data-filter=".first">DevCon</li>
+                    <li class="btn px-3 pe-4" data-filter=".second">BIH Launch</li>
                 </ul>
             </div>
         </div>
         <div class="row g-4 portfolio-container">
             <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
                 <div class="position-relative rounded overflow-hidden">
-                    <img class="img-fluid w-100" src="{{ asset('seo-agency-website-template/img/portfolio-1.jpg') }}"
+                    <img class="img-fluid w-100" src="{{ asset('seo-agency-website-template/img/DEV CON 84.jpg') }}"
                         alt="">
                     <div class="portfolio-overlay">
-                        <a class="btn btn-light" href="{{ asset('seo-agency-website-template/img/portfolio-1.jpg') }}"
+                        <a class="btn btn-light" href="{{ asset('seo-agency-website-template/img/DEV CON 84.jpg') }}"
                             data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                         <div class="mt-auto">
-                            <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <small class="text-white"><i class="fa fa-folder me-2"></i>Panel Discussion</small>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="">DevCon</a>
                         </div>
                     </div>
                 </div>
@@ -31,69 +31,69 @@
             <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
                 <div class="position-relative rounded overflow-hidden">
                     <img class="img-fluid w-100"
-                        src="{{ asset('seo-agency-website-template/img/portfolio-2.jpg') }}" alt="">
+                        src="{{ asset('seo-agency-website-template/img/IMG_0860.jpg') }}" alt="">
                     <div class="portfolio-overlay">
                         <a class="btn btn-light"
-                            href="{{ asset('seo-agency-website-template/img/portfolio-2.jpg') }}"
+                            href="{{ asset('seo-agency-website-template/img/IMG_0860.jpg') }}"
                             data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                         <div class="mt-auto">
-                            <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <small class="text-white"><i class="fa fa-folder me-2"></i>Launch Day</small>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="">BIH Launch</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
                 <div class="position-relative rounded overflow-hidden">
-                    <img class="img-fluid w-100" src="{{ asset('seo-agency-website-template/img/portfolio-3.jpg') }}" alt="">
+                    <img class="img-fluid w-100" src="{{ asset('seo-agency-website-template/img/DEV CON 76.jpg') }}" alt="">
                     <div class="portfolio-overlay">
                         <a class="btn btn-light"
-                            href="{{ asset('seo-agency-website-template/img/portfolio-3.jpg') }}"
+                            href="{{ asset('seo-agency-website-template/img/DEV CON 76.jpg') }}"
                             data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                         <div class="mt-auto">
-                            <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <small class="text-white"><i class="fa fa-folder me-2"></i>CEO Welcome Speech</small>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="">DevCon</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
+            <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
                 <div class="position-relative rounded overflow-hidden">
-                    <img class="img-fluid w-100" src="{{ asset('seo-agency-website-template/img/portfolio-4.jpg') }}" alt="">
+                    <img class="img-fluid w-100" src="{{ asset('seo-agency-website-template/img/DEV CON 23.jpg') }}" alt="">
                     <div class="portfolio-overlay">
-                        <a class="btn btn-light" href="{{ asset('seo-agency-website-template/img/portfolio-4.jpg') }}"
+                        <a class="btn btn-light" href="{{ asset('seo-agency-website-template/img/DEV CON 23.jpg') }}"
                             data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                         <div class="mt-auto">
-                            <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <small class="text-white"><i class="fa fa-folder me-2"></i>New Friends</small>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="">DevCon</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
+            <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
                 <div class="position-relative rounded overflow-hidden">
                     <img class="img-fluid w-100"
-                        src="{{ asset('seo-agency-website-template/img/portfolio-5.jpg') }}" alt="">
+                        src="{{ asset('seo-agency-website-template/img/IMG_0800.jpg') }}" alt="">
                     <div class="portfolio-overlay">
                         <a class="btn btn-light"
-                            href="{{ asset('seo-agency-website-template/img/portfolio-5.jpg') }}"
+                            href="{{ asset('seo-agency-website-template/img/IMG_0800.jpg') }}"
                             data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                         <div class="mt-auto">
-                            <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <small class="text-white"><i class="fa fa-folder me-2"></i>Ladies in Tech</small>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="">BIH Launch</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
+            <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
                 <div class="position-relative rounded overflow-hidden">
-                    <img class="img-fluid w-100" src="{{ asset('seo-agency-website-template/img/portfolio-6.jpg') }}" alt="">
+                    <img class="img-fluid w-100" src="{{ asset('seo-agency-website-template/img/DEV CON 35.jpg') }}" alt="">
                     <div class="portfolio-overlay">
-                        <a class="btn btn-light" href="{{ asset('seo-agency-website-template/img/portfolio-6.jpg') }}" data-lightbox="portfolio"><i
+                        <a class="btn btn-light" href="{{ asset('seo-agency-website-template/img/DEV CON 35.jpg') }}" data-lightbox="portfolio"><i
                                 class="fa fa-plus fa-2x text-primary"></i></a>
                         <div class="mt-auto">
-                            <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <small class="text-white"><i class="fa fa-folder me-2"></i>Happy Friends</small>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="">DevCon</a>
                         </div>
                     </div>
                 </div>

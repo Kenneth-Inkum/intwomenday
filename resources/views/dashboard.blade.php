@@ -84,108 +84,41 @@
     @include('layouts.partials.fullscreensearch')
     <!-- Full Screen Search End -->
 
-
-    <!-- About Start -->
-    @include('layouts.partials.about-us')
-    <!-- About End -->
-
-    <!-- Synopsis Start -->
-    <div class="container-xxl py-5">
-        <div class="container px-lg-5">
-            <div class="row g-5">
-                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="section-title position-relative mb-4 pb-2">
-                        {{-- <h6 class="position-relative text-primary ps-4">Synopsis </h6> --}}
-                        <h2 class="mt-2">What to expect</h2>
-                    </div>
-                    <p class="mb-4">The upcoming BIH International Women's Day tech event is set to be an engaging and
-                        informative expereince
-                        <strong><em>"DigitAll: Innovation and technology for
-                                Gender Equality,"</em></strong> and we are delighted to extent an invitation to you to
-                        be a part of this transformative event.
-                    </p>
-                    {{-- <div class="section-title position-relative mb-4 pb-2">
-                        <h2 class="mt-2">Break-out Session Topics</h2>
-                    </div> --}}
-
-                    {{-- <div class="row g-3">
-                        <div class="col-sm-12">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Building Supportive
-                                Communities for Women in tech</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Digital Skills for Female
-                                Entrepreneurs</h6>
-                        </div>
-                        <div class="col-sm-12">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Cybersecurity and Artificial
-                                Intelligence</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Breaking the Glass Ceiling
-                                in Tech Careers</h6>
-                        </div>
-                    </div> --}}
-                    {{-- <div class="d-flex align-items-center mt-4">
-                        <a class="btn btn-primary rounded-pill px-4 me-3" href="{{ route('about-us') }}">Read More</a>
-                        <a class="btn btn-outline-primary btn-square me-3" href="https://facebook.com/bluespacehubs"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href="https://twitter.com/bluespacehubs"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href="https://instagram.com/bluespacehubs"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div> --}}
-                </div>
-                {{-- <div class="col-lg-6">
-                    <img class="img-fluid wow zoomIn" data-wow-delay="0.5s"
-                        src="{{ asset('seo-agency-website-template/img/about.jpg') }}">
-                </div> --}}
-
-                {{-- <div class="section-title position-relative mb-4 pb-2">
-                    <h6 class="position-relative text-primary ps-4">What to Expect </h6>
-                    <h2 class="mt-2"></h2>
-                </div>
-                <p class="mb-4"></p> --}}
-
-            </div>
-        </div>
-    </div>
-    <!-- Synopsis End -->
-
-
     <!-- Registeration Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="register">
         <div class="container px-lg-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="wow fadeInUp" data-wow-delay="0.3s">
                         <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp"
                             data-wow-delay="0.1s">
-                            <h6 class="position-relative d-inline text-primary ps-4">Register for the IWD Event</h6>
-                            {{-- <h2 class="mt-2">Contact For Any Query</h2> --}}
+                            <h6 class="position-relative d-inline text-primary ps-4">Registeration</h6>
+                            <h2 class="mt-2">Register for the IWD Event</h2>
                         </div>
 
                         <form>
-                            <div class="row g-3">
-                                <div class="col-md-12">
+                            <div class="row g-4">
+                                <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="name"
                                             placeholder="Your Name">
                                         <label for="name">Name</label>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="email" class="form-control" id="email"
                                             placeholder="Your Email">
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="subject" placeholder="Subject">
                                         <label for="subject">Phone Number</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="subject" placeholder="Subject">
                                         <label for="subject">Location</label>
@@ -217,6 +150,73 @@
         </div>
     </div>
     <!-- Registration End -->
+
+
+    <!-- About Start -->
+    @include('layouts.partials.about-us')
+    <!-- About End -->
+
+    <!-- Synopsis Start -->
+    {{-- <div class="container-xxl py-5">
+        <div class="container px-lg-5">
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="section-title position-relative mb-4 pb-2">
+                        <h6 class="position-relative text-primary ps-4">Synopsis </h6>
+                        <h2 class="mt-2">What to expect</h2>
+                    </div>
+                    <p class="mb-4">The upcoming BIH International Women's Day tech event is set to be an engaging and
+                        informative expereince
+                        <strong><em>"DigitAll: Innovation and technology for
+                                Gender Equality,"</em></strong> and we are delighted to extent an invitation to you to
+                        be a part of this transformative event.
+                    </p>
+                    <div class="section-title position-relative mb-4 pb-2">
+                        <h2 class="mt-2">Break-out Session Topics</h2>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-sm-12">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Building Supportive
+                                Communities for Women in tech</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Digital Skills for Female
+                                Entrepreneurs</h6>
+                        </div>
+                        <div class="col-sm-12">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Cybersecurity and Artificial
+                                Intelligence</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Breaking the Glass Ceiling
+                                in Tech Careers</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-primary rounded-pill px-4 me-3" href="{{ route('about-us') }}">Read More</a>
+                        <a class="btn btn-outline-primary btn-square me-3" href="https://facebook.com/bluespacehubs"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-3" href="https://twitter.com/bluespacehubs"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-3" href="https://instagram.com/bluespacehubs"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid wow zoomIn" data-wow-delay="0.5s"
+                        src="{{ asset('seo-agency-website-template/img/about.jpg') }}">
+                </div>
+
+                <div class="section-title position-relative mb-4 pb-2">
+                    <h6 class="position-relative text-primary ps-4">What to Expect </h6>
+                    <h2 class="mt-2"></h2>
+                </div>
+                <p class="mb-4"></p>
+
+            </div>
+        </div>
+    </div> --}}
+    <!-- Synopsis End -->
+
 
 
     <!-- Newsletter Start -->
