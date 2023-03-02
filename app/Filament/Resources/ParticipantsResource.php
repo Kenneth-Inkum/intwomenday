@@ -47,14 +47,29 @@ class ParticipantsResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('email'),
-                Tables\Columns\TextColumn::make('phone'),
-                Tables\Columns\TextColumn::make('location'),
-                Tables\Columns\TextColumn::make('session'),
+                Tables\Columns\TextColumn::make('name')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('email')
+                    ->sortable()
+                    ->searchable(),
+
+                Tables\Columns\TextColumn::make('phone')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('location')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('session')
+                    ->sortable()
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->sortable()
+                    ->searchable()
                     ->dateTime(),
                 Tables\Columns\TextColumn::make('updated_at')
+                    ->sortable()
+                    ->searchable()
                     ->dateTime(),
             ])
             ->filters([
@@ -62,6 +77,7 @@ class ParticipantsResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
