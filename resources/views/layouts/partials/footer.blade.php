@@ -21,7 +21,7 @@
             </div>
             <div class="col-md-6 col-lg-6">
                 <h5 class="text-white mb-4">Event Location</h5>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d834.7918571233172!2d-0.20883738598722568!3d5.572686433086559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9a127b314d7f%3A0x88f544a9f8be3594!2sBlueCrest%20University%20College!5e0!3m2!1sen!2sgh!4v1677603883205!5m2!1sen!2sgh" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d834.7918571233172!2d-0.20883738598722568!3d5.572686433086559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9a127b314d7f%3A0x88f544a9f8be3594!2sBlueCrest%20University%20College!5e0!3m2!1sen!2sgh!4v1677603883205!5m2!1sen!2sgh" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             {{-- <div class="col-md-6 col-lg-4">
