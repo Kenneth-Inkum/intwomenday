@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Participants;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 
 class DashboardController extends Controller
 {
@@ -33,9 +34,22 @@ class DashboardController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users,email,',
+            'phone' => 'required|max:10',
+            'location' => 'required|string|max:255',
+            'session' => 'required|string|max:255',
+
+        ]);
+
+        // dd($validated);
+
+        Participants::create($validated);
+
+        return redirect(route('index'));
     }
 
     /**

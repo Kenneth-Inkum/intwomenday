@@ -98,52 +98,71 @@
                             <h2 class="mt-2">Register for the IWD Event</h2>
                         </div>
 
-                        <form wire:submit.prevent="submit" wire:ignore>
+                        <form method="POST" action="{{ route('store') }}">
+                            @csrf
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" wire:model="name" class="form-control" id="name"
+                                        <input type="text" class="form-control" id="name" name="name"
                                             placeholder="Your Name">
                                         <label for="name">Name</label>
                                         @error('name')
-                                            <span class="error">{{ $message }}</span>
+                                            <small class="error" style="color:red">{{ $message }}</small>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" wire:model="email" class="form-control" id="email"
+                                        <input type="email" class="form-control" id="email" name="email"
                                             placeholder="Your Email">
                                         <label for="email">Email</label>
+                                        @error('email')
+                                            <small class="error" style="color:red">{{ $message }}</small>
+                                        @enderror
+
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-floating">
-                                        <input type="text" wire:model="phone" class="form-control" id="subject"
-                                            placeholder="Subject">
-                                        <label for="subject">Phone Number</label>
+                                        <input type="text" class="form-control" id="phone" name="phone"
+                                            placeholder="Phone Number">
+                                        <label for="phone">Phone Number</label>
+                                        @error('phone')
+                                            <small class="error" style="color:red">{{ $message }}</small>
+                                        @enderror
+
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-floating">
-                                        <input type="text" wire:model="location" class="form-control" id="subject"
-                                            placeholder="Subject">
-                                        <label for="subject">Location</label>
+                                        <input type="text" class="form-control" id="location" name="location"
+                                            placeholder="location">
+                                        <label for="location">Location</label>
+                                        @error('location')
+                                            <small class="error" style="color:red">{{ $message }}</small>
+                                        @enderror
+
                                     </div>
                                 </div>
                                 <div class="col-12">
 
                                     <div class="form-floating">
-                                        <select class="form-select" wire:model="session"
-                                            aria-label="Default select example">
+                                        <select class="form-select" id="session" name="session">
                                             <option></option>
-                                            <option value="1">Building Supportive Communities for Women in Tech
+                                            <option value="Building Supportive Communities for Women in Tech">Building
+                                                Supportive Communities for Women in Tech
                                             </option>
-                                            <option value="2">Digital Skills for Female Entrpreneurs</option>
-                                            <option value="3">Cybersecurity and Artificial Intelligence</option>
-                                            <option value="">Breaking the glass Ceiling in Tech Careers</option>
+                                            <option value="Digital Skills for Female Entrpreneurs">Digital Skills for
+                                                Female Entrpreneurs</option>
+                                            <option value="Cybersecurity and Artificial Intelligence">Cybersecurity and
+                                                Artificial Intelligence</option>
+                                            <option value="Breaking the glass Ceiling in Tech Careers">Breaking the
+                                                glass Ceiling in Tech Careers</option>
                                         </select>
-                                        <label for="message">Select your preferred breakout session</label>
+                                        <label for="session">Select your preferred breakout session</label>
+                                        @error('session')
+                                            <small class="error" style="color:red">{{ $message }}</small>
+                                        @enderror
 
                                     </div>
                                 </div>
