@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
-use App\Http\Livewire\AboutUs;
-use App\Http\Livewire\Register;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,11 +18,10 @@ use App\Http\Livewire\Register;
 //     return view('welcome');
 // });
 
-Route::get('/', DashboardController::class)->name('dashboard');
 
-Route::get('/about', AboutUs::class)->name('about-us');
+Route::resource('/', DashboardController::class)
+    ->only(['index', 'store']);
 
-Route::get('/register', Register::class)->name('register');
 
 
 

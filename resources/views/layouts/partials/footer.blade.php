@@ -15,7 +15,7 @@
                 </div>
 
                 <h5 class="text-white mb-4 mt-5">Links</h5>
-                <a class="btn btn-link" href="{{ route('dashboard') }}">Home</a>
+                <a class="btn btn-link" href="{{ route('index') }}">Home</a>
                 <a class="btn btn-link" href="#register">Register</a>
 
             </div>
@@ -26,7 +26,7 @@
 
             {{-- <div class="col-md-6 col-lg-4">
                 <h5 class="text-white mb-4">Links</h5>
-                <a class="btn btn-link" href="{{ route('dashboard') }}">Home</a>
+                <a class="btn btn-link" href="{{ route('index') }}">Home</a>
                 <a class="btn btn-link" href="{{ route('register') }}">Register</a>
                 <a class="btn btn-link" href="{{ route('about-us') }}">About Event</a>
                 <a class="btn btn-link" href="">Terms & Condition</a>

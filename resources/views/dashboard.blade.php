@@ -8,7 +8,8 @@
         </div> --}}
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="img-fluid" src="{{ asset('seo-agency-website-template/img/IWD-Pull-up-bd.jpg') }}" style="object-fit:fill" alt="">
+                <img class="img-fluid" src="{{ asset('seo-agency-website-template/img/IWD-Pull-up-bd.jpg') }}"
+                    style="object-fit:fill" alt="">
                 {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> --}}
                 {{-- <div class="container">
                     <div class="carousel-caption text-start">
@@ -85,6 +86,7 @@
     <!-- Full Screen Search End -->
 
     <!-- Registeration Start -->
+
     <div class="container-xxl py-5" id="register">
         <div class="container px-lg-5">
             <div class="row justify-content-center">
@@ -96,38 +98,44 @@
                             <h2 class="mt-2">Register for the IWD Event</h2>
                         </div>
 
-                        <form>
+                        <form wire:submit.prevent="submit" wire:ignore>
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name"
+                                        <input type="text" wire:model="name" class="form-control" id="name"
                                             placeholder="Your Name">
                                         <label for="name">Name</label>
+                                        @error('name')
+                                            <span class="error">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email"
+                                        <input type="email" wire:model="email" class="form-control" id="email"
                                             placeholder="Your Email">
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" wire:model="phone" class="form-control" id="subject"
+                                            placeholder="Subject">
                                         <label for="subject">Phone Number</label>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" wire:model="location" class="form-control" id="subject"
+                                            placeholder="Subject">
                                         <label for="subject">Location</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
 
                                     <div class="form-floating">
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select" wire:model="session"
+                                            aria-label="Default select example">
                                             <option></option>
                                             <option value="1">Building Supportive Communities for Women in Tech
                                             </option>
@@ -140,7 +148,8 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3 blue-footer" type="submit">Register</button>
+                                    <button class="btn btn-primary w-100 py-3 blue-footer"
+                                        type="submit">Register</button>
                                 </div>
                             </div>
                         </form>
@@ -149,7 +158,12 @@
             </div>
         </div>
     </div>
+
     <!-- Registration End -->
+
+    <!-- Testimonial Start -->
+    @include('layouts.partials.testimonials')
+    <!-- Testimonial End -->
 
 
     <!-- About Start -->
@@ -234,7 +248,4 @@
     <!-- Portfolio End -->
 
 
-    <!-- Testimonial Start -->
-    {{-- @include('layouts.partials.testimonials') --}}
-    <!-- Testimonial End -->
 </x-app-layout>
