@@ -8,7 +8,7 @@
         </div> --}}
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="img-fluid" src="{{ asset('seo-agency-website-template/img/IWD-Pull-up.png') }}" style="object-fit:fill" alt="">
+                <img class="img-fluid" src="{{ asset('seo-agency-website-template/img/IWD-Pull-up-bd.jpg') }}" style="object-fit:fill" alt="">
                 {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> --}}
                 {{-- <div class="container">
                     <div class="carousel-caption text-start">

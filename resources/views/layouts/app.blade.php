@@ -46,7 +46,7 @@
         <!-- Navbar & Hero Start -->
         <div class="position-relative p-0 ">
 
-            @include('layouts.partials.navbar')
+            {{-- @include('layouts.partials.navbar') --}}
 
             {{ $slot }}
 

@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
     <a href="" class="navbar-brand p-0">
         {{-- <h1 class="m-0"><i class="fa fa-female me-2"></i>IWD<span class="fs-5">Celebration</span></h1> --}}
-        <img src="{{ asset('seo-agency-website-template/img/Bluespace Innovation Hub Black-01.png') }}" class="me-3" alt="Logo">
+        {{-- <img src="{{ asset('seo-agency-website-template/img/Bluespace Innovation Hub Black-01.png') }}" class="me-3" alt="Logo">
         <img src="{{ asset('seo-agency-website-template/img/logo-bcc.png') }}" class="me-3" alt="Logo">
-        <img src="{{ asset('seo-agency-website-template/img/innovations-spark.png') }}" class="me-3" alt="Logo">
+        <img src="{{ asset('seo-agency-website-template/img/innovations-spark.png') }}" class="me-3" alt="Logo"> --}}
 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

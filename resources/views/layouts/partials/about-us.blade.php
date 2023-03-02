@@ -6,7 +6,10 @@
                     <h6 class="position-relative text-primary ps-4">Synopsis </h6>
                     <h2 class="mt-2">A Space for Inclusivity and Innovation</h2>
                 </div>
-                <p class="mb-4">As we approach International Women's Day this March, we are excited to announce the BlueSPACE Innovation Hub's upcoming event, <strong><em>"DigitAll: Innovation and technology for Gender Equality,"</em></strong> and we are delighted to extent an invitation to you to be a part of this transformative event.</p>
+                <p class="mb-4">The digital landscape is constantly evolving, and new technologies such as virtual reality,
+                    artificial intelligence, and blockchain are revolutionizing the way we live and work.<br>These digital innovations
+                    have the potential to empower women in a variety of ways, from creating new job opportunities to improving
+                    access to education.</p>
                 <div class="section-title position-relative mb-4 pb-2">
                     <h2 class="mt-2">Break-out Session Topics</h2>
                 </div>
