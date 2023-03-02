@@ -21,6 +21,7 @@ class CreateParticipantsTable extends Migration
             $table->string('location');
             $table->string('session');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
