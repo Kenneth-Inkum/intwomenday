@@ -1,4 +1,4 @@
-<div class="bg-primary testimonial py-5 my-5 wow fadeInUp brand-logo" data-wow-delay="0.1s">
+<div class="bg-primary testimonial py-5 my-5 wow fadeInUp brand-logocolor" data-wow-delay="0.1s">
     <div class="container py-5 px-lg-5">
         <div class="owl-carousel testimonial-carousel">
             <div class="testimonial-item bg-transparent rounded text-white p-4"
