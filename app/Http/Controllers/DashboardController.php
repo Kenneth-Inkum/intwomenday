@@ -49,7 +49,7 @@ class DashboardController extends Controller
 
         Participants::create($validated);
 
-        return redirect(route('index'));
+        return redirect()->route('index')->with('message','You have successfully registered');
     }
 
     /**
