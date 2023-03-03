@@ -70,7 +70,7 @@
                 {{-- <i class="fa fa-quote-left fa-2x mb-3"></i> --}}
                 {{-- <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                 </p> --}}
-                <img src="{{ asset('seo-agency-website-template/img/GFPA logo.png') }}" style="width:100%" class="me-3" alt="Logo">
+                <img src="{{ asset('seo-agency-website-template/img/Asset-6@3x-copy.png') }}" style="width:100%" class="me-3" alt="Logo">
 
                 {{-- <div class="d-flex align-items-center">
                     <img class="img-fluid flex-shrink-0 rounded-circle"
