@@ -2,9 +2,9 @@
     <div class="container px-lg-5">
         <div class="row align-items-center" style="height: 250px;">
             <div class="col-12 col-md-6">
-                <h2 class="text-white"><i class="fas fa-map-marker"></i> BlueCrest University College</h2>
-                <h3 class="text-white mt-4"><i class="fas fa-calendar"></i> 25th March 2023</h3>
-                <h3 class="text-white mt-4"><i class="fas fa-clock"></i> 9:00am</h3>
+                <h4 class="text-white"><i class="fas fa-map-marker"></i> BlueCrest University College</h4>
+                <h4 class="text-white mt-3"><i class="fas fa-calendar"></i> 25th March 2023</h4>
+                <h4 class="text-white mt-3"><i class="fas fa-clock"></i> 9:00am</h4>
 
                 {{-- <small class="text-white">Thank you for visiting our website and showing an interest in our content. By
                     subscribing to our newsletter you'll receive regular updates on our latest articles, news, events,
