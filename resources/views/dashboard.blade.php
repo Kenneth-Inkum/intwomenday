@@ -95,8 +95,18 @@
     <div class="container-xxl py-5" id="register">
         <div class="container px-lg-5">
             <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-7" id="form-container">
+                    <div class="wow fadeInUp" data-wow-delay="0.3s" id="form-container">
+                        @if ($errors->any())
+                            <div class="totop">
+                                {{-- <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul> --}}
+                            </div>
+                        @endif
+
                         <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp"
                             data-wow-delay="0.1s">
                             <h6 class="position-relative d-inline text-primary ps-4">Registeration</h6>

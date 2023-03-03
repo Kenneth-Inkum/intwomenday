@@ -49,7 +49,8 @@ class DashboardController extends Controller
 
         Participants::create($validated);
 
-        return redirect()->route('index')->with('message','You have successfully registered');
+        // return redirect()->route('index')->with('message','You have successfully registered');
+        return redirect()->back()->with('message','You have successfully registered');
     }
 
     /**

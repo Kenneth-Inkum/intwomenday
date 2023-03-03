@@ -219,6 +219,20 @@
                 document.getElementById('longitude_view').innerHTML = '';
             });
         </script>
+        <script>
+            // Get the container div and the first error message
+            const container = document.querySelector('#form-container');
+            const firstError = container.querySelector('.totop');
+
+            // If there is an error, scroll to it
+            if (firstError) {
+                const offset = firstError.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
 </body>
 
 </html>
