@@ -111,37 +111,114 @@
         <script>
             @if (Session::has('message'))
                 toastr.options = {
-                    "closeButton": true,
-                    "progressBar": true
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
                 }
                 toastr.success("{{ session('message') }}");
             @endif
 
             @if (Session::has('error'))
                 toastr.options = {
-                    "closeButton": true,
-                    "progressBar": true
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
                 }
                 toastr.error("{{ session('error') }}");
             @endif
 
             @if (Session::has('info'))
                 toastr.options = {
-                    "closeButton": true,
-                    "progressBar": true
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
                 }
                 toastr.info("{{ session('info') }}");
             @endif
 
             @if (Session::has('warning'))
                 toastr.options = {
-                    "closeButton": true,
-                    "progressBar": true
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
                 }
                 toastr.warning("{{ session('warning') }}");
             @endif
         </script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAtuDkEFeKKAFAeX9bRG0n3KK2HCf-3ga0">
+        </script>
+        <script>
+            var searchInput = 'search_input';
+            $(document).ready(function() {
+                var autocomplete;
+                autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+                    types: ['geocode']
+                });
+                google.maps.event.addListener(autocomplete, 'place_changed', function() {
+                    var near_place = autocomplete.getplace();
+                    document.getElementById('latitude_input').value = near_place.geometry.location.lat();
+                    document.getElementById('longitude_input').value = near_place.geometry.location.lng();
 
+                    document.getElementById('latitude_view').innerHTML = near_place.geometry.location.lat();
+                    document.getElementById('lontitude_view').innerHTML = near_place.geometry.location.lng();
+                });
+            });
+            $(document).on('change', '#' + searchInput, function() {
+                document.getElementById('latitude_input').value = '';
+                document.getElementById('longitude_input').value = '';
+                document.getElementById('latitude_view').innerHTML = '';
+                document.getElementById('longitude_view').innerHTML = '';
+            });
+        </script>
 </body>
 
 </html>

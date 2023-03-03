@@ -43,12 +43,20 @@
     }
 }
 
-@import url('../css/font/stylesheet.css');
 
+@font-face {
+    font-family: MusticaPro;
+    src: url("../css/font/MusticaPro-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../css/font/Gilroy\ Font/Gilroy-Light.ttf") format("truetype");
+}
 
 body {
     margin: 0;
-    font-family: "mustica_prosemi_bold", sans-serif;
+    font-family: Gilroy, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -84,7 +92,7 @@ h6,
 .h6 {
     margin-top: 0;
     margin-bottom: .5rem;
-    font-family: "Roboto", sans-serif;
+    font-family: MusticaPro, sans-serif;
     font-weight: 500;
     line-height: 1.2;
     color: #1D1D27
@@ -6253,7 +6261,7 @@ fieldset:disabled .btn {
     z-index: 1080;
     display: block;
     margin: 0;
-    font-family: "mustica_prosemi_bold", sans-serif;
+    font-family: MusticaPro, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6380,7 +6388,7 @@ fieldset:disabled .btn {
     z-index: 1070;
     display: block;
     max-width: 276px;
-    font-family: "mustica_prosemi_bold", sans-serif;
+    font-family: MusticaPro, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;

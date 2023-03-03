@@ -82,8 +82,13 @@
 
 
     <!-- Full Screen Search Start -->
-    @include('layouts.partials.fullscreensearch')
+    {{-- @include('layouts.partials.fullscreensearch') --}}
     <!-- Full Screen Search End -->
+
+    <!-- Newsletter Start -->
+    @include('layouts.partials.newsletter')
+    <!-- Newsletter End -->
+
 
     <!-- Registeration Start -->
 
@@ -135,7 +140,7 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="location" name="location"
+                                        <input type="text" class="form-control" id="search_input" name="location"
                                             placeholder="location">
                                         <label for="location">Location</label>
                                         @error('location')
@@ -250,11 +255,6 @@
     </div> --}}
     <!-- Synopsis End -->
 
-
-
-    <!-- Newsletter Start -->
-    {{-- @include('layouts.partials.newsletter') --}}
-    <!-- Newsletter End -->
 
 
     <!-- Service Start -->
