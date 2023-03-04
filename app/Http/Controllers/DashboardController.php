@@ -38,7 +38,7 @@ class DashboardController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email,',
+            'email' => 'required|email|unique:participants,email,',
             'phone' => 'required|max:10',
             'location' => 'required|string|max:255',
             'session' => 'required|string|max:255',
@@ -49,7 +49,6 @@ class DashboardController extends Controller
 
         Participants::create($validated);
 
-        // return redirect()->route('index')->with('message','You have successfully registered');
         return redirect()->back()->with('message','You have successfully registered');
     }
 
