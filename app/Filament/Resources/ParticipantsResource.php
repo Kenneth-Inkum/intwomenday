@@ -13,12 +13,18 @@ use Filament\Tables\Filters\TrashedFilter;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\ParticipantsResource\Pages;
 use App\Filament\Resources\ParticipantsResource\RelationManagers;
+use App\Filament\Resources\ParticipantsResource\Widgets\ParticipantStatsOverview;
 
 class ParticipantsResource extends Resource
 {
     protected static ?string $model = Participants::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
+
+    protected static ?string $title = 'Custom Page Title';
+
+    // protected static ?string $navigationLabel = 'Custom Navigation Label';
+
 
     public static function form(Form $form): Form
     {
@@ -38,9 +44,14 @@ class ParticipantsResource extends Resource
                 Forms\Components\TextInput::make('location')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('session')
+                Forms\Components\Select::make('session')
                     ->required()
-                    ->maxLength(255),
+                    ->options([
+                        'Building Supportive Communities for Women in Tech'=>'Building Supportive Communities for Women in Tech',
+                        'Digital Skills for Female Entrepreneurs'=>'Digital Skills for Female Entrepreneurs',
+                        'Cybersecurity and Artificial Intelligence'=>'Cybersecurity and Artificial Intelligence',
+                        'Breaking the Glass Ceiling in Tech Careers'=>'Breaking the Glass Ceiling in Tech Careers',
+                    ]),
             ]);
     }
 
@@ -54,7 +65,6 @@ class ParticipantsResource extends Resource
                 Tables\Columns\TextColumn::make('email')
                     ->sortable()
                     ->searchable(),
-
                 Tables\Columns\TextColumn::make('phone')
                     ->sortable()
                     ->searchable(),
@@ -89,6 +99,13 @@ class ParticipantsResource extends Resource
     {
         return [
             //
+        ];
+    }
+
+    public static function getWidgets(): array
+    {
+        return [
+            ParticipantStatsOverview::class,
         ];
     }
 

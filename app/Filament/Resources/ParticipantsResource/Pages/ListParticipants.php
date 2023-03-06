@@ -2,9 +2,10 @@
 
 namespace App\Filament\Resources\ParticipantsResource\Pages;
 
-use App\Filament\Resources\ParticipantsResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
+use App\Filament\Resources\ParticipantsResource;
+use App\Filament\Resources\ParticipantsResource\Widgets\ParticipantStatsOverview;
 
 class ListParticipants extends ListRecords
 {
@@ -14,6 +15,13 @@ class ListParticipants extends ListRecords
     {
         return [
             Actions\CreateAction::make(),
+        ];
+    }
+
+    protected function getHeaderWidgets(): array
+    {
+        return [
+            ParticipantStatsOverview::class,
         ];
     }
 }

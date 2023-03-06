@@ -127,7 +127,7 @@
                     "showMethod": "fadeIn",
                     "hideMethod": "fadeOut"
                 }
-                toastr.success("{{ session('message') }}");
+                toastr.success("{{ session('message') }}","Success");
             @endif
 
             @if (Session::has('error'))
@@ -148,7 +148,7 @@
                     "showMethod": "fadeIn",
                     "hideMethod": "fadeOut"
                 }
-                toastr.error("{{ session('error') }}");
+                toastr.error("{{ session('error') }}","Error");
             @endif
 
             @if (Session::has('info'))
@@ -169,7 +169,7 @@
                     "showMethod": "fadeIn",
                     "hideMethod": "fadeOut"
                 }
-                toastr.info("{{ session('info') }}");
+                toastr.info("{{ session('info') }}","Info");
             @endif
 
             @if (Session::has('warning'))
@@ -190,7 +190,7 @@
                     "showMethod": "fadeIn",
                     "hideMethod": "fadeOut"
                 }
-                toastr.warning("{{ session('warning') }}");
+                toastr.warning("{{ session('warning') }}","warning");
             @endif
         </script>
         <script
