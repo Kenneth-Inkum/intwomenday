@@ -168,11 +168,11 @@
                                                 Supportive Communities for Women in Tech
                                             </option>
                                             <option value="Digital Skills for Female Entrepreneurs">Digital Skills for
-                                                Female Entrpreneurs</option>
+                                                Female Entrepreneurs</option>
                                             <option value="Cybersecurity and Artificial Intelligence">Cybersecurity and
                                                 Artificial Intelligence</option>
                                             <option value="Breaking the Glass Ceiling in Tech Careers">Breaking the
-                                                glass Ceiling in Tech Careers</option>
+                                                Glass Ceiling in Tech Careers</option>
                                         </select>
                                         <label for="session">Select your preferred breakout session</label>
                                         @error('session')
