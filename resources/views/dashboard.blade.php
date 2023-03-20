@@ -90,7 +90,7 @@
     <!-- Newsletter End -->
 
 
-    <!-- Registeration Start -->
+    <!-- Registration Start -->
 
     <div class="container-xxl py-5" id="register">
         <div class="container px-lg-5">
@@ -109,7 +109,7 @@
 
                         <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp"
                             data-wow-delay="0.1s">
-                            <h6 class="position-relative d-inline text-primary ps-4">Registeration</h6>
+                            <h6 class="position-relative d-inline text-primary ps-4">Registration</h6>
                             <h2 class="mt-2">Register for the IWD Event</h2>
                         </div>
 
